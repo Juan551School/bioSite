@@ -72,10 +72,12 @@ main {
 }
 
 .gallery img {
-  width: 250px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    height: 250px;   /* Changed the hieght to not be so big */
+    width: auto;     /* keeps the image ratio */
+    object-fit: cover;
+    border-radius: 8px;
 }
+
 
 figcaption {
   text-align: center;
